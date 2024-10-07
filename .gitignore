@@ -1,0 +1,10 @@
+# !include database
+db.*
+
+# !include structure
+static/images/mol/*
+
+# !include build, compile
+dist
+mol_to_img.egg-info
+**/__pycache__

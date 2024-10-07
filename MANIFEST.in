@@ -1,0 +1,2 @@
+include mol_to_img/templates/mol_to_img/*.html
+recursive-include mol_to_img/static/mol_to_img *

@@ -1,0 +1,16 @@
+asgiref==3.8.1
+cairocffi==1.7.1
+CairoSVG==2.7.1
+cffi==1.17.1
+cssselect2==0.7.0
+defusedxml==0.7.1
+Django==5.1.1
+mol_to_img @ file:///home/joanna/dstructure/dist/mol_to_img-0.1.tar.gz#sha256=7150871177c9b475a24449d555542204de7514e4fb9961c1fb202fca37d9fe39
+numpy==2.1.2
+pillow==10.4.0
+pycparser==2.22
+rdkit==2024.3.5
+setuptools==75.1.0
+sqlparse==0.5.1
+tinycss2==1.3.0
+webencodings==0.5.1
