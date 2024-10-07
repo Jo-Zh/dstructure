@@ -1,7 +1,7 @@
 {% load static %}
-<img
-  src="/{{mol_img_url}}/{{drug_pk}}.svg"
-  alt="structure"
-  loading="lazy"
-  style="max-height: 20em"
-/>
+<!--  -->
+{% for item in structure_list %}
+<!--  -->
+{{item|safe}}
+<!--  -->
+{% endfor %}

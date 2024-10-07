@@ -1,4 +1,4 @@
-from .utils import convert_mol_img
+from .utils import molecule_to_svg
 from .views import structure_handler
 
-__all__ = ['structure_handler', 'convert_mol_img']
+__all__ = ['structure_handler', 'molecule_to_svg']

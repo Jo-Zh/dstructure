@@ -24,11 +24,6 @@ Follow these steps to utilize this package for drawing molecular structures from
     ...
    ]
 
-   #...
-   # Ensure the following static directories exists
-   MOL_IMG_URL = 'static/images/mol'
-   MOL_IMG_DIR = os.path.join(BASE_DIR, 'static/images/mol')
-
    ```
 
 4. **Use `structure_handler` Function**: to draw molecular structures, for example:

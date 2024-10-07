@@ -1,18 +1,16 @@
 from django.shortcuts import render
-from .utils import convert_mol_img, defaultVal
-from django.conf import settings
+from .utils import molecule_to_svg, defaultVal
 
-# convert to structure-svg and build context with structure-svg-path
-def structure_handler(drug_obj) -> object:
-    convert_mol_img(drug_obj)
-    context = {}
-    context['mol_img_url'] = settings.MOL_IMG_URL
-    context['drug_pk']=drug_obj.pk
+# convert to structure-svg list based on objects smol field
+def structure_handler(drug_objs) -> dict:
+    context ={}
+    structure_list = [molecule_to_svg(obj).decode('utf-8') for obj in drug_objs]
+    context['structure_list'] = structure_list  
     return context
 
 # Home site
 def home(request):
-    default_obj = defaultVal
-    context = structure_handler(default_obj)
+    default_objs = [defaultVal] # objects list from the model
+    context = structure_handler(default_objs)
     context['title'] = 'Drug Structure'
     return render(request, 'mol_to_img/home.html', context)
