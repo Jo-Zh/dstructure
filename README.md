@@ -33,4 +33,5 @@ def home(request):
 ## Run as Individual project:
 
 1. run `pip install -r requirements.txt` - install all dependencies in environment
-2. start project via `python manage.py runserver`
+2. export secret key as environment variable `export DJ_KEY='your-django-secret-key'`
+3. start project via `python manage.py runserver`
