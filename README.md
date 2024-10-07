@@ -36,7 +36,8 @@ Follow these steps to utilize this package for drawing molecular structures from
   # Home site
 
   def home(request): # Retrieve your objects from the model, such as a drug model
-      context = structure_handler(drug_object)
+      # drug_object_list get from model -> object list
+      context = structure_handler(drug_object_list)
       context['title'] = 'Drug Structure'
       return render(request, 'home.html', context)
 
